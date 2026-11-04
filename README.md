@@ -6,7 +6,7 @@
 <p align="center">
   <a href="mailto:gencay.coskun.en@gmail.com"><img alt="Email" src="https://img.shields.io/badge/gencay.coskun.en@gmail.com-F26B1D?style=for-the-badge&logo=gmail&logoColor=white"></a>
   <a href="https://esco-uav.space"><img alt="ESCO-UAV" src="https://img.shields.io/badge/esco--uav.space-111827?style=for-the-badge&logo=googleearth&logoColor=white"></a>
-  <a href="https://coskungencay.github.io"><img alt="iOS apps" src="https://img.shields.io/badge/iOS_apps-111827?style=for-the-badge&logo=apple&logoColor=white"></a>
+  <a href="https://genco.codes"><img alt="Portfolio: genco.codes" src="https://img.shields.io/badge/genco.codes-111827?style=for-the-badge&logo=apple&logoColor=white"></a>
   <img alt="Istanbul, Türkiye" src="https://img.shields.io/badge/Istanbul,_Türkiye-30363d?style=for-the-badge&logo=googlemaps&logoColor=white">
 </p>
 
@@ -95,7 +95,7 @@ Before ESCO, I worked on machine learning, image processing and data labelling w
 
 ## 📱 iOS apps & games
 
-I design, build and publish my own apps in Swift. More at **[coskungencay.github.io](https://coskungencay.github.io)**.
+I design, build and publish my own apps in Swift. Portfolio: **[genco.codes](https://genco.codes)**.
 
 <table>
   <tr>
