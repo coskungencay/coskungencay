@@ -187,6 +187,35 @@ def avatar() -> None:
     Image.open(SRC / "photo.png").convert("RGB").save(OUT / "avatar.jpg", quality=92)
 
 
+BRANDS = {  # out name -> source in src/brands/ ("-dark" = drawn for a dark background)
+    "duosis": "duosis-{t}.svg",
+    "hermes": "hermes-logo-{t}.png",
+    "logislot": "logislot-logo-{t}.png",
+    "drake": "drake-wordmark-{t}.webp",
+}
+
+
+def brand_logos(max_h: int = 120) -> None:
+    """Trim the transparent margin and cap the height; never upscale."""
+    import subprocess
+
+    (OUT / "brands").mkdir(exist_ok=True)
+    for name, pattern in BRANDS.items():
+        for theme in ("dark", "light"):
+            src = SRC / "brands" / pattern.format(t=theme)
+            if src.suffix == ".svg":
+                png = subprocess.run(["rsvg-convert", "-h", str(max_h * 2), str(src)], check=True,
+                                     capture_output=True).stdout
+                im = Image.open(io.BytesIO(png))
+            else:
+                im = Image.open(src)
+            im = im.convert("RGBA")
+            im = im.crop(im.getchannel("A").getbbox())
+            if im.height > max_h:
+                im = im.resize((round(im.width * max_h / im.height), max_h), Image.LANCZOS)
+            im.save(OUT / "brands" / f"{name}-{theme}.png", optimize=True)
+
+
 if __name__ == "__main__":
     for theme, t in THEMES.items():
         (OUT / f"banner-{theme}.svg").write_text(banner(t))
@@ -194,4 +223,5 @@ if __name__ == "__main__":
         (OUT / f"esco-pipeline-{theme}.svg").write_text(pipeline(t))
     app_icons()
     avatar()
+    brand_logos()
     print("ok")

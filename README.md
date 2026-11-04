@@ -56,36 +56,40 @@ Before ESCO, I worked on machine learning, image processing and data labelling w
 
 ## 🏢 Duosis Information Systems
 
-**Platform Analyst** · 10/2025 – present · Istanbul &nbsp;·&nbsp; <sub>joined as a software intern in 07/2025</sub>
+<p>
+  <a href="https://github.com/Duosis-Developer-Team"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/brands/duosis-dark.png"><img alt="Duosis — IT for More" src="assets/brands/duosis-light.png" height="56"></picture></a>
+</p>
+
+**Platform Analyst** · 10/2025 – present · Istanbul &nbsp;·&nbsp; <sub>joined as a software intern in 07/2025 · member of <a href="https://github.com/Duosis-Developer-Team">Duosis Developer Team</a></sub>
 
 <table>
   <tr>
-    <td width="50%" valign="top">
-      <h3>🛠️ HERMES</h3>
-      The company's work and support request platform, built end to end: web, mobile, infrastructure and security. Used daily by the company and its customers.
+    <td width="33%" valign="top" align="center">
+      <br><picture><source media="(prefers-color-scheme: dark)" srcset="assets/brands/hermes-dark.png"><img alt="HERMES" src="assets/brands/hermes-light.png" height="38"></picture><br><br>
+      <b>Work & support request platform</b><br>
+      <sub>Built end to end: web, mobile, infrastructure and security. Used daily by the company and its customers.</sub><br><br>
+      <img alt="React" src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=white"> <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"> <img alt="Electron" src="https://img.shields.io/badge/Electron-47848F?style=flat-square&logo=electron&logoColor=white"> <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white">
+      <br><br>
     </td>
-    <td width="50%" valign="top">
-      <h3>🚚 LogiSlot</h3>
-      Multi-tenant SaaS that digitises goods receiving and dock appointments for factories and warehouses, across web, mobile and cloud.
+    <td width="33%" valign="top" align="center">
+      <br><picture><source media="(prefers-color-scheme: dark)" srcset="assets/brands/logislot-dark.png"><img alt="LogiSlot" src="assets/brands/logislot-light.png" height="38"></picture><br><br>
+      <b>Smart dock-appointment SaaS</b><br>
+      <sub>Multi-tenant platform that digitises goods receiving and dock appointments for factories and warehouses, across web, mobile and cloud.</sub><br><br>
+      <img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white"> <img alt="Expo · React Native" src="https://img.shields.io/badge/Expo_·_React_Native-20232A?style=flat-square&logo=expo&logoColor=white"> <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"> <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white">
+      <br><br>
     </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>📈 Observability consulting</h3>
-      Observability and IT process automation for enterprise customers.<br><br>
-      <img alt="Instana" src="https://img.shields.io/badge/Instana-1F70C1?style=flat-square">
-      <img alt="Datadog" src="https://img.shields.io/badge/Datadog-632CA6?style=flat-square&logo=datadog&logoColor=white">
-      <img alt="OpenText OO / SA" src="https://img.shields.io/badge/OpenText_OO_/_SA-111111?style=flat-square">
-      <img alt="Kubernetes" src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white">
-    </td>
-    <td width="50%" valign="top">
-      <h3>🗄️ DATALAKE</h3>
-      Contributed to an enterprise data-lake project.<br><br>
-      <img alt="Kafka" src="https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white">
-      <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white">
+    <td width="33%" valign="top" align="center">
+      <br><picture><source media="(prefers-color-scheme: dark)" srcset="assets/brands/drake-dark.png"><img alt="Drake" src="assets/brands/drake-light.png" height="26"></picture><br><br>
+      <b>Observability control plane</b><br>
+      <sub>One project catalog for Kubernetes workload health, golden signals, PostgreSQL health, tenant usage, backup evidence and alert/incident projection.</sub><br><br>
+      <img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white"> <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"> <img alt="Go" src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white"> <img alt="Prometheus" src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white"> <img alt="OpenTelemetry" src="https://img.shields.io/badge/OpenTelemetry-425CC7?style=flat-square&logo=opentelemetry&logoColor=white">
+      <br><br>
     </td>
   </tr>
 </table>
+
+**Also:** observability and IT process automation consulting for enterprise customers, and an enterprise data-lake project.
+&nbsp; <img alt="Instana" src="https://img.shields.io/badge/Instana-1F70C1?style=flat-square"> <img alt="Datadog" src="https://img.shields.io/badge/Datadog-632CA6?style=flat-square&logo=datadog&logoColor=white"> <img alt="OpenText OO / SA" src="https://img.shields.io/badge/OpenText_OO_/_SA-111111?style=flat-square"> <img alt="Kubernetes" src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white"> <img alt="Kafka" src="https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white">
 
 <br>
 
@@ -161,21 +165,8 @@ I design, build and publish my own apps in Swift. More at **[coskungencay.github
 
 <br>
 
-## 🎓 Education & community
+## 🎓 Education
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <b>Sakarya University</b><br>
-      B.Sc. Computer Engineering · final year<br>
-      <sub>2023 – present</sub>
-    </td>
-    <td width="50%" valign="top">
-      <b>ultrAslan UNI Sakarya</b><br>
-      Management team member<br>
-      <sub>2024 – 2026</sub>
-    </td>
-  </tr>
-</table>
+**Sakarya University** — B.Sc. Computer Engineering, final year · <sub>2023 – present</sub>
 
 <p align="center"><sub>Istanbul, Türkiye · I work in English and Turkish · <a href="mailto:gencay.coskun.en@gmail.com">gencay.coskun.en@gmail.com</a></sub></p>
