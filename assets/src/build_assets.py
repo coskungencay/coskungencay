@@ -184,7 +184,7 @@ def app_icons() -> None:
 
 
 def avatar() -> None:
-    Image.open(SRC / "photo-avatar.png").convert("RGB").save(OUT / "avatar.jpg", quality=92)
+    Image.open(SRC / "photo-banner.png").convert("RGB").save(OUT / "avatar.jpg", quality=92)
 
 
 BRANDS = {  # out name -> source in src/brands/ ("-dark" = drawn for a dark background)
