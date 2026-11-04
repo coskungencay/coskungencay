@@ -2,7 +2,7 @@
 
     python assets/src/build_assets.py      # needs Pillow
 
-Outputs into assets/: banner-*.svg, esco-stats-*.svg, esco-pipeline-*.svg,
+Outputs into assets/: header-*.svg, esco-stats-*.svg, esco-pipeline-*.svg,
 avatar.png, app-*.png.
 """
 
@@ -218,7 +218,7 @@ def brand_logos(max_h: int = 120) -> None:
 
 if __name__ == "__main__":
     for theme, t in THEMES.items():
-        (OUT / f"banner-{theme}.svg").write_text(banner(t))
+        (OUT / f"header-{theme}.svg").write_text(banner(t))
         (OUT / f"esco-stats-{theme}.svg").write_text(stats(t))
         (OUT / f"esco-pipeline-{theme}.svg").write_text(pipeline(t))
     app_icons()
