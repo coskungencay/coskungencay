@@ -33,7 +33,7 @@ def svg(w: int, h: int, body: str, label: str) -> str:
 
 
 def photo_data_uri(size: int = 360) -> str:
-    im = Image.open(SRC / "photo.png").convert("RGB").resize((size, size), Image.LANCZOS)
+    im = Image.open(SRC / "photo-banner.png").convert("RGB").resize((size, size), Image.LANCZOS)
     buf = io.BytesIO()
     im.save(buf, "JPEG", quality=86, optimize=True, progressive=True)
     return "data:image/jpeg;base64," + base64.b64encode(buf.getvalue()).decode()
@@ -184,7 +184,7 @@ def app_icons() -> None:
 
 
 def avatar() -> None:
-    Image.open(SRC / "photo.png").convert("RGB").save(OUT / "avatar.jpg", quality=92)
+    Image.open(SRC / "photo-avatar.png").convert("RGB").save(OUT / "avatar.jpg", quality=92)
 
 
 BRANDS = {  # out name -> source in src/brands/ ("-dark" = drawn for a dark background)
