@@ -1,105 +1,181 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <img alt="Süleyman Gencay Coşkun — Computer Engineering · Autonomous UAVs · Computer Vision · Product Engineering" src="assets/banner-light.svg" width="100%">
+  <img alt="Gencay Coşkun — Computer Engineering @ Sakarya University · Platform Analyst @ Duosis · Captain @ ESCO-UAV" src="assets/banner-light.svg" width="100%">
 </picture>
 
-<br>
+<p align="center">
+  <a href="mailto:gencay.coskun.en@gmail.com"><img alt="Email" src="https://img.shields.io/badge/gencay.coskun.en@gmail.com-F26B1D?style=for-the-badge&logo=gmail&logoColor=white"></a>
+  <a href="https://esco-uav.space"><img alt="ESCO-UAV" src="https://img.shields.io/badge/esco--uav.space-111827?style=for-the-badge&logo=googleearth&logoColor=white"></a>
+  <a href="https://coskungencay.github.io"><img alt="iOS apps" src="https://img.shields.io/badge/iOS_apps-111827?style=for-the-badge&logo=apple&logoColor=white"></a>
+  <img alt="Istanbul, Türkiye" src="https://img.shields.io/badge/Istanbul,_Türkiye-30363d?style=for-the-badge&logo=googlemaps&logoColor=white">
+</p>
 
-I'm a final-year **Computer Engineering** student at Sakarya University and a **Platform Analyst** at Duosis, where I build enterprise products end to end — web, mobile, infrastructure and security.
-
-Outside work I captain **[ESCO-UAV](https://esco-uav.space)**, a four-person team building an autonomous fixed-wing aircraft for the TEKNOFEST Fighting UAV competition. I wrote its telemetry stack, ground station, target detector and lock-on guidance. I also ship my own iOS apps and games.
+I build things that fly, see and ship. By day I'm a **Platform Analyst at Duosis**, building enterprise products end to end: web, mobile, infrastructure and security. Beyond that I captain **ESCO-UAV**, our autonomous fixed-wing aircraft for TEKNOFEST Fighting UAV, and publish my own iOS apps and games.
 
 <br>
 
 ## ✈️ ESCO-UAV — autonomous fixed-wing UAV
 
-**Role:** Team captain & software lead · 04/2026 – present
+**Team captain & software lead** · 4-person team · 04/2026 – present · 🌐 [esco-uav.space](https://esco-uav.space)
 
-- **Telemetry & ground station** built to the competition spec: Python companion computer, FastAPI service and a Next.js live map. The companion talks MAVLink to ArduPilot.
-- **Target detection:** a YOLO11 detector trained on **41,891 images**. It reached **96.5 % detection** with **zero false locks** in validation.
-- **Lock-on guidance** validated end to end in ArduPlane SITL, with safety gates for area limits, altitude floors and separation from rival aircraft.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/esco-stats-dark.svg">
+  <img alt="41,891 training images · 96.5% detection · 0 false locks in validation · guidance validated in SITL" src="assets/esco-stats-light.svg" width="100%">
+</picture>
+
+<br><br>
+
+<p align="center">
+  <img alt="ESCO-UAV R14 assembly, part by part from the CAD model" src="assets/esco-assembly.gif" width="100%">
+  <br>
+  <sub>R14 assembly, part by part, positioned straight from the CAD model</sub>
+</p>
+
+- **Telemetry & ground station** to the competition spec: Python companion computer, FastAPI service and a Next.js live map, with a spec-compliant link to the competition server.
+- **Target detection:** a YOLO11 detector trained on 41,891 images. It reached 96.5 % detection with zero false locks in validation.
+- **Lock-on guidance** validated end to end in ArduPlane SITL. Safety gates cover the area limits, the altitude floor and separation from rival aircraft, and the operator stays in the loop.
 - **Airframe** designed with engineering analysis and parametric CAD, then built with laser cutting and 3D printing.
 
-```text
-camera ─▶ YOLO11 detector ─▶ tracker ─▶ guidance ─▶ MAVLink ─▶ ArduPilot
-                                                                   │
-competition server ◀─ FastAPI ◀─ companion computer ◀── telemetry ─┘
-                         │
-                         └─▶ Next.js ground station (live map, permits, tasks)
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/esco-pipeline-dark.svg">
+  <img alt="System: camera → YOLO11 detector → tracker → guidance → MAVLink → ArduPilot; telemetry: companion → FastAPI → Next.js ground station and competition server" src="assets/esco-pipeline-light.svg" width="100%">
+</picture>
 
-**Stack:** Python · FastAPI · MAVLink · ArduPilot · YOLO11 · OpenCV · Next.js · CadQuery
+<p>
+  <img alt="Python, FastAPI, Next.js, OpenCV" src="https://skillicons.dev/icons?i=py,fastapi,nextjs,opencv">
+  &nbsp;
+  <img alt="ArduPilot" src="https://img.shields.io/badge/ArduPilot-0F2C4C?style=for-the-badge">
+  <img alt="MAVLink" src="https://img.shields.io/badge/MAVLink-1E5A96?style=for-the-badge">
+  <img alt="YOLO11" src="https://img.shields.io/badge/YOLO11-111F68?style=for-the-badge&logo=ultralytics&logoColor=white">
+  <img alt="CadQuery" src="https://img.shields.io/badge/CadQuery-4B5563?style=for-the-badge">
+</p>
 
-🌐 [esco-uav.space](https://esco-uav.space) · 📦 [esco-uav-landing](https://github.com/coskungencay/esco-uav-landing)
-
-Earlier I worked on machine learning, image processing and data labelling with Sakarya University's **İLGERU-UAV** team, and competed in TEKNOFEST Fighting UAV 2024.
-
-<br>
-
-## 🏢 Work — Duosis Information Systems
-
-**Platform Analyst** · 10/2025 – present · Istanbul (joined as a software intern in 07/2025)
-
-| Project | What I do |
-|---|---|
-| **HERMES** | I'm building the company's work and support request platform end to end: web, mobile, infrastructure and security. It is in daily use by the company and its customers. |
-| **LogiSlot** | I'm building a multi-tenant SaaS that digitises goods receiving and dock-appointment scheduling for factories and warehouses, across web, mobile and cloud. |
-| **Consulting** | I advise enterprise customers on observability and IT process automation (Instana, Datadog, OpenText OO/SA, Kubernetes). |
-| **DATALAKE** | I worked on an enterprise data-lake project. |
+Before ESCO, I worked on machine learning, image processing and data labelling with Sakarya University's **İLGERU-UAV** team, and competed in TEKNOFEST Fighting UAV 2024.
 
 <br>
 
-## 📱 Independent iOS development
+## 🏢 Duosis Information Systems
 
-I design and build my own apps in Swift and publish them on the App Store.
+**Platform Analyst** · 10/2025 – present · Istanbul &nbsp;·&nbsp; <sub>joined as a software intern in 07/2025</sub>
 
-| App | About |
-|---|---|
-| **Thunder Blast: OLYMPUS** | Premium match-3 game built with SwiftUI and SpriteKit. No energy timers and no subscriptions. |
-| **BALLROWS: Neon Blast** | Puzzle game. |
-| **AssetFlow AI** | AI-assisted generator for App Store screenshots and marketing images. |
-
-More at **[coskungencay.github.io](https://coskungencay.github.io)**.
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🛠️ HERMES</h3>
+      The company's work and support request platform, built end to end: web, mobile, infrastructure and security. Used daily by the company and its customers.
+    </td>
+    <td width="50%" valign="top">
+      <h3>🚚 LogiSlot</h3>
+      Multi-tenant SaaS that digitises goods receiving and dock appointments for factories and warehouses, across web, mobile and cloud.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>📈 Observability consulting</h3>
+      Observability and IT process automation for enterprise customers.<br><br>
+      <img alt="Instana" src="https://img.shields.io/badge/Instana-1F70C1?style=flat-square">
+      <img alt="Datadog" src="https://img.shields.io/badge/Datadog-632CA6?style=flat-square&logo=datadog&logoColor=white">
+      <img alt="OpenText OO / SA" src="https://img.shields.io/badge/OpenText_OO_/_SA-111111?style=flat-square">
+      <img alt="Kubernetes" src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white">
+    </td>
+    <td width="50%" valign="top">
+      <h3>🗄️ DATALAKE</h3>
+      Contributed to an enterprise data-lake project.<br><br>
+      <img alt="Kafka" src="https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white">
+      <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white">
+    </td>
+  </tr>
+</table>
 
 <br>
 
-## 🧰 Open source
+## 📱 iOS apps & games
 
-| Repository | About |
-|---|---|
-| [**teknofest-ktr-olcer**](https://github.com/coskungencay/teknofest-ktr-olcer) | Pre-checks TEKNOFEST rocket design reports (KTR) against the official rubric: 95 requirements, disqualification-risk flags and HTML/JSON reports. Includes a CLI and a web dashboard. *Python* |
-| [**besiktas-carsisi**](https://github.com/coskungencay/besiktas-carsisi) | Multilingual website with an admin panel for the Grand Beşiktaş Bazaar. *Next.js 15* |
-| [**tarsau**](https://github.com/coskungencay/tarsau) | Command-line archiver that bundles ASCII text files into a single `.sau` archive; a systems programming course project. *C* |
-| [**ci-cd-sau**](https://github.com/coskungencay/ci-cd-sau) | CI/CD and DevSecOps demo: FastAPI with GitHub Actions, Semgrep and Trivy. |
+I design, build and publish my own apps in Swift. More at **[coskungencay.github.io](https://coskungencay.github.io)**.
+
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <img alt="Thunder Blast: OLYMPUS" src="assets/app-olympus.png" width="96"><br>
+      <b>Thunder Blast: OLYMPUS</b><br>
+      <sub>Premium match-3 game in SwiftUI and SpriteKit, with no energy timers and no subscriptions</sub>
+    </td>
+    <td align="center" width="33%">
+      <img alt="BALLROWS: Neon Blast" src="assets/app-ballrows.png" width="96"><br>
+      <b>BALLROWS: Neon Blast</b><br>
+      <sub>Neon puzzle game</sub>
+    </td>
+    <td align="center" width="33%">
+      <img alt="AssetFlow AI" src="assets/app-assetflow.png" width="96"><br>
+      <b>AssetFlow AI</b><br>
+      <sub>AI-assisted App Store screenshot and marketing-image generator</sub>
+    </td>
+  </tr>
+</table>
 
 <br>
 
-## 🛠️ Toolbox
+## 🧰 Tech stack
 
-| Area | Tools |
-|---|---|
-| **Languages** | Python · TypeScript · JavaScript · Swift · C |
-| **Web & backend** | Next.js · React · React Native · FastAPI |
-| **UAV & autonomy** | ArduPilot · MAVLink · SITL · telemetry / ground control |
-| **Vision & ML** | YOLO · OpenCV · dataset building and labelling |
-| **Data & infra** | PostgreSQL · Kafka (Confluent) · Docker · Kubernetes · Cloudflare |
-| **Observability** | Instana · Datadog · OpenText OO / SA |
-| **Design & fabrication** | Parametric CAD (CadQuery) · 3D printing · laser cutting |
-| **AI-assisted dev** | Claude Code · Cursor · MCP · AI agents |
+<table>
+  <tr>
+    <td><b>Languages</b></td>
+    <td><img alt="Python, TypeScript, JavaScript, Swift, C" src="https://skillicons.dev/icons?i=py,ts,js,swift,c"></td>
+  </tr>
+  <tr>
+    <td><b>Web & backend</b></td>
+    <td><img alt="Next.js, React, FastAPI, Node.js" src="https://skillicons.dev/icons?i=nextjs,react,fastapi,nodejs"></td>
+  </tr>
+  <tr>
+    <td><b>Data & infra</b></td>
+    <td><img alt="PostgreSQL, Kafka, Docker, Kubernetes, Cloudflare, GitHub Actions" src="https://skillicons.dev/icons?i=postgres,kafka,docker,kubernetes,cloudflare,githubactions"></td>
+  </tr>
+  <tr>
+    <td><b>UAV & vision</b></td>
+    <td>
+      <img alt="OpenCV" src="https://skillicons.dev/icons?i=opencv">
+      &nbsp;
+      <img alt="ArduPilot" src="https://img.shields.io/badge/ArduPilot-0F2C4C?style=for-the-badge">
+      <img alt="MAVLink" src="https://img.shields.io/badge/MAVLink-1E5A96?style=for-the-badge">
+      <img alt="SITL" src="https://img.shields.io/badge/SITL-374151?style=for-the-badge">
+      <img alt="YOLO" src="https://img.shields.io/badge/YOLO-111F68?style=for-the-badge&logo=ultralytics&logoColor=white">
+    </td>
+  </tr>
+  <tr>
+    <td><b>Design & fabrication</b></td>
+    <td>
+      <img alt="CadQuery" src="https://img.shields.io/badge/CadQuery-4B5563?style=for-the-badge">
+      <img alt="3D printing" src="https://img.shields.io/badge/3D_printing-00AE42?style=for-the-badge&logo=bambulab&logoColor=white">
+      <img alt="Laser cutting" src="https://img.shields.io/badge/Laser_cutting-B45309?style=for-the-badge">
+    </td>
+  </tr>
+  <tr>
+    <td><b>AI-assisted dev</b></td>
+    <td>
+      <img alt="Claude Code" src="https://img.shields.io/badge/Claude_Code-D97757?style=for-the-badge&logo=claude&logoColor=white">
+      <img alt="Cursor" src="https://img.shields.io/badge/Cursor-000000?style=for-the-badge&logo=cursor&logoColor=white">
+      <img alt="MCP and AI agents" src="https://img.shields.io/badge/MCP_·_AI_agents-374151?style=for-the-badge">
+    </td>
+  </tr>
+</table>
 
 <br>
 
 ## 🎓 Education & community
 
-- **Sakarya University**, B.Sc. Computer Engineering (final year) · 2023 – present
-- **ultrAslan UNI Sakarya**, management team member · 2024 – 2026
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <b>Sakarya University</b><br>
+      B.Sc. Computer Engineering · final year<br>
+      <sub>2023 – present</sub>
+    </td>
+    <td width="50%" valign="top">
+      <b>ultrAslan UNI Sakarya</b><br>
+      Management team member<br>
+      <sub>2024 – 2026</sub>
+    </td>
+  </tr>
+</table>
 
-<br>
-
-## 📫 Contact
-
-<a href="mailto:gencay.coskun.en@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-gencay.coskun.en%40gmail.com-F26B1D?style=flat-square&logo=gmail&logoColor=white"></a>
-<a href="https://esco-uav.space"><img alt="ESCO-UAV" src="https://img.shields.io/badge/ESCO--UAV-esco--uav.space-111827?style=flat-square"></a>
-<a href="https://coskungencay.github.io"><img alt="Apps" src="https://img.shields.io/badge/iOS%20apps-coskungencay.github.io-111827?style=flat-square&logo=apple&logoColor=white"></a>
-
-Istanbul, Türkiye · I work in English and Turkish.
+<p align="center"><sub>Istanbul, Türkiye · I work in English and Turkish · <a href="mailto:gencay.coskun.en@gmail.com">gencay.coskun.en@gmail.com</a></sub></p>
